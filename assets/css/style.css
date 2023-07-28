@@ -162,7 +162,7 @@ hr{
     background-color: #c7c7c7; height: 1px; border: 0;
     margin-top: 1vh;
 }
-h1,h2,h4,h3,h5,a,button{
+h1,h2,h4,h3,h5,a,button,form{
     font-family: 'Poppins', sans-serif;
 }
 h1{
@@ -478,6 +478,24 @@ textarea{
     border-radius: 400px;
 }
 
+#contact .container .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    font-family: inherit;
+}
+
+#contact .btn-contact {
+    width: 100%;
+}
+
+#contact .contact-info {
+    display: flex;
+    justify-content: space-between;
+}
 
 @media only screen and (max-width: 480px) {
     .font-1{
