@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- TODO: favicon -->
+    <!-- TODO: remove all the unused junk -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,9 +43,20 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6">
-              <a href="index.html"
-                ><img class="img-responsive" src="assets/img/logo.png"
-              /></a>
+              <a href="index.html">
+                <div class="header-p1">
+                  <div>
+                    <!-- TODO: this image is warped AF on mobile, maybe add to media queries or bootstrapify-->
+                    <img
+                      class="img-responsive foot-img"
+                      src="assets/img/temp_logo.jpg"
+                    />
+                  </div>
+                  <div>
+                    <p>Aurora Music Lessons</p>
+                  </div>
+                </div>
+              </a>
             </div>
             <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
               <div id="mySidenav" class="sidenav text-center">
@@ -53,11 +66,11 @@
                   onclick="closeNav()"
                   >&times;</a
                 ><br />
-                <a href="index.html">Home</a>
+                <a href="#">Home</a>
                 <hr />
-                <a href="generic.html">Generic</a>
+                <a href="#offerings">Services</a>
                 <hr />
-                <a href="element.html">Element</a>
+                <a href="#about">Bio</a>
               </div>
               <div class="main" id="main">
                 <a href="#" onclick="openNav()">MENU &#9776;</a>
@@ -67,29 +80,40 @@
           <hr />
         </div>
       </div>
-      <div id="landing-page" class="wow">
-        <div class="container">
-          <div class="row">
-            <div class="wow-logo">
-              <img
-                class="img-responsive img-logo"
-                src="assets/img/wow_logo.png"
-              />
+      <div class="container landing-container">
+        <div class="row landing-page">
+          <!-- TODO: this image is warped AF on mobile, maybe add to media queries -->
+          <div class="landing-pic">
+            <img
+              class="img-responsive img-helmet ian-pic-main"
+              src="assets/img/generic_lesson.jpg"
+            />
+          </div>
+          <div id="contact" class="container">
+            <p>Send a message for more info!</p>
+            <!-- TODO: need to set the correct email address and also populate the fields properly -->
+            <form id="contact-form" action="mailto: joerafalak@gmail.com" method="POST">
+              <div class="mb-5">
+                  <label for="message">Message:</label>
+                  <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+              </div>
+              <div class="mb-5 row contact-info">
+                  <div class="col-lg-6">
+                      <label>Name:</label>
+                      <input type="text" required maxlength="50" class="form-control" id="name" name="name">
+                  </div>
+                  <div class="col-lg-6">
+                      <label for="email_addr">Email:</label>
+                      <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                          placeholder="name@example.com">
+                  </div>
+              </div>
+            </form>
+    
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary btn-contact" onclick="document.getElementById('contact-form').submit();">Send</a>
             </div>
-            <div class="font-1 helmet text-center">
-              <p>An <strong>immersive</strong> vertual reality helmet.</p>
-            </div>
-            <div class="wow-btn text-center">
-              <a class="btn btn-default wow-button" href="#contact"
-                >Learn More</a
-              >
-            </div>
-            <div class="landing-pic">
-              <img
-                class="img-responsive img-helmet ian-pic-main"
-                src="assets/img/Ian-main.jpg"
-              />
-            </div>
+            <div class="status"></div>
           </div>
         </div>
       </div>
@@ -171,7 +195,7 @@
       <div class="container">
         <div class="row why-div">
           <div class="text-center">
-            <h2>About Ian</h2>
+            <h2>Our Staff</h2>
           </div>
           <hr class="hr-mid" />
         </div>
@@ -179,7 +203,7 @@
         <div class="row">
           <div class="col-lg-9 col-sm-12 col-md-9 col-xs-12">
             <div class="holder-para">
-              <h3>Bio</h3>
+              <h3>Ian</h3>
               <hr class="hr-short" />
               <p class="font-2">
                 Ian Rafalak is a bassist, producer and educator based in Aurora,
@@ -201,139 +225,25 @@
             <div class="holder-img">
               <img
                 class="round-img img-responsive center-block"
-                src="assets/img/ianrecording.jpg"
+                src="assets/img/Ian-main.jpg"
               />
             </div>
           </div>
         </div>
-
-        <hr class="line-full" />
-
-        <div class="row">
-          <div class="col-lg-9 col-xs-12 col-sm-12 col-md-9 col-md-push-3">
-            <div class="holder-para">
-              <h3>Lessons</h3>
-              <hr class="hr-short" />
-              <p class="font-2">
-                This is a blurb about lessons and how great they are. iniquities
-                of the selfish and the tyranny of evil men. Blessed is he who,
-                in the name of charity and good will, shepherds the weak through
-                the valley of darkness, for he is truly his brother's keeper and
-                the finder of lost children. And I will strike down upon thee
-                with great vengeance and furious anger those who would attempt
-                to poison and destroy My brothers. And you will know My name is
-                the Lord when I
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3 col-md-pull-9">
-            <div class="holder-img">
-              <img
-                class="round-img img-responsive center-block"
-                src="assets/img/ianandgus.jpg"
-              />
-            </div>
-          </div>
-        </div>
-
-        <hr class="line-full" />
-
-        <div class="row">
-          <div class="col-lg-9 col-xs-12 col-sm-12 col-md-9">
-            <div class="holder-para">
-              <h3>Performance</h3>
-              <hr class="hr-short" />
-              <p class="font-2">
-                This is just an example of another section about performing
-                iniquities of the selfish and the tyranny of evil men. Blessed
-                is he who, in the name of charity and good will, shepherds the
-                weak through the valley of darkness, for he is truly his
-                brother’s keeper and the finder of lost children. And I will
-                strike down upon thee with great vengeance and furious anger
-                those who would attempt to poison and destroy My brothers. And
-                you will know My name is the Lord when I
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-3 col-xs-12 col-sm-12 col-md-3">
-            <div class="holder-img">
-              <img
-                class="round-img img-responsive center-block"
-                src="assets/img/socksguitar.jpeg"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="index-part-4">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-lg-6 col-sm-6 col-md-6 col-block">
-              <form id="contact-form" action="mailto: joerafalak@gmail.com" method="POST">
-                <div class="mb-5">
-                    <label for="message">Message:</label>
-                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
-                </div>
-                <div class="mb-5 row contact-info">
-                    <div class="col-lg-6">
-                        <label>Name:</label>
-                        <input type="text" required maxlength="50" class="form-control" id="name" name="name">
-                    </div>
-                    <div class="col-lg-6">
-                        <label for="email_addr">Email:</label>
-                        <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
-                            placeholder="name@example.com">
-                    </div>
-                </div>
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary btn-contact" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="social">
-      <ul>
-        <li>
-          <a href="#" class="fa fa-pinterest fa-2x" aria-hidden="true"></a>
-        </li>
-        <li><a href="#" class="fa fa-twitter fa-2x" aria-hidden="true"></a></li>
-        <li>
-          <a href="#" class="fa fa-linkedin fa-2x" aria-hidden="true"></a>
-        </li>
-        <li>
-          <a href="#" class="fa fa-stumbleupon fa-2x" aria-hidden="true"></a>
-        </li>
-      </ul>
     </section>
 
     <section class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-            <div class="footer-p1">
-              <p class="font-2">Copy right 2016 by wow technology</p>
+          <div class="footer-p1">
+            <div>
+              <p class="font-2">Copyright 2023 by Aurora Music Lessons</p>
             </div>
-          </div>
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-            <img
-              class="img-responsive foot-img"
-              src="assets/img/footer-logo.png"
-            />
-          </div>
-          <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
-            <div class="footer-p2">
-              <p class="font-2">
-                Made with <i class="fa fa-heart" aria-hidden="true"></i> by
-                <a href="https://themewagon.com/themes/" target="_blank"
-                  >themewagon</a
-                >
-              </p>
+            <div>
+              <img
+                class="img-responsive foot-img"
+                src="assets/img/temp_logo.jpg"
+              />
             </div>
           </div>
         </div>
