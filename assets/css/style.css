@@ -18,7 +18,14 @@ body{
 }
 
 .desktop-links {
-    display: block;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.desktop-links a {
+    color: inherit;
+    padding: 1em;
 }
 
 .mobile-menu {
@@ -78,11 +85,6 @@ body{
     padding-top: 15px;
 }
 
-/*@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}*/
-
 .menu-ul{
     text-align: center;
 }
@@ -96,22 +98,12 @@ body {
 }
 .head-bar{
     padding-top: 1vh;
-    max-height: 10vh;
-}
-.wow-logo{
-    padding-bottom: 2vh;
-    padding-top:10vh;
-}
-.img-logo{
-    max-height: 15vh;
-    margin-left: auto;
-    margin-right: auto;
-}
-.helmet{
-    max-height: 5vh;
+    height: 10vh;
+    display: flex;
+    align-items: center;
 }
 .head{
-    min-height: 100vh;
+    min-height: 90vh;
 }
 .fix-bottom{
     text-align: bottom;
@@ -239,8 +231,10 @@ i{
     text-decoration: none;
 }
 
-.footer {
+section .footer {
     background-color: #f7f7f7;
+    /* position: fixed:
+    bottom: 0px; */
 }
 .footer-p1,.footer-p2{
     padding-top: 10px;
@@ -258,8 +252,8 @@ i.fa-heart{
     margin-bottom: 0px;
 }
 .footer{
-    padding-top: 35px;
-    padding-bottom: 45px;
+    height: 10vh;
+    padding: 10px;
     border-top: 1px solid #cccccc;
 }
 .generic-page{
@@ -434,6 +428,7 @@ textarea{
     color: black;
     font-weight: bold;
     font-size: 24px;
+    width: 100%;
 }
 .header-p1 div {
     margin: 0px 10px;
@@ -444,6 +439,10 @@ textarea{
 }
 
 @media screen and (min-width: 481px) and (max-width: 1200px) {
+    .head-bar {
+        display: flex;
+        align-items: center;
+    }
 
    .block{
     padding-top: 30px;
@@ -461,16 +460,21 @@ textarea{
     .footer{
         padding-top: 15px;
         padding-bottom: 25px;
+        height: 10vh;
     }
     .footer-p2 a{
     font-size: 12px;
     }
 }
 
+#home-page, #contact-page, #about-page {
+    min-height: 80vh;
+}
+
 .landing-container {
     width: 100vw;
-    min-height: 90vh;
-    padding: 0 10% 10% 10%;
+    min-height: 80vh;
+    padding: 0 10% 3% 10%;
     background-image: url("../img/music_blackboard.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -541,8 +545,8 @@ textarea{
     font-size: 10px;
     }
     .footer{
-        padding-top: 15px;
-        padding-bottom: 25px;
+        min-height: 10vh;
+        padding: 10px;
     }
 /*    .wow-logo{
     padding-bottom: 10px;
@@ -582,12 +586,8 @@ textarea{
     .head-bar{
     padding: auto;
     }
-    /*.wow-logo{
-        padding: auto;
-    }*/
     button {
         padding: auto;
-
     }
     .generic{
     padding-top: 15px;
@@ -620,10 +620,6 @@ textarea{
     .head-bar{
         padding-top: 1vh;
         max-height: 10vh;
-    }
-    .wow-logo{
-        padding-bottom: 2vh;
-        padding-top:10vh;
     }
     .img-logo{
         max-height: 30vh;

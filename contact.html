@@ -32,13 +32,13 @@
     />
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <script type="text/javascript" src="assets/js/script.js"></script>
-    <title>Aurora Music Lessons - Home</title>
+    <title>Aurora Music Lessons - Contact</title>
   </head>
   <body>
     <!-- div used to make the body blur -->
     <div class="overlay" id="overlay" onclick="closeNav()"></div>
 
-    <section class="head index-part-1">
+    <section class="index-part-1">
       <div class="head-bar">
         <div class="container">
           <div class="row">
@@ -85,89 +85,82 @@
           <hr />
         </div>
       </div>
-      <div id="home-page" class="container landing-container">
-        <div class="landing-page">
-          <div class="row landing-heading text-center">
-            <div class="col-lg">
-              <h3>Lessons in Aurora, CO or around the world</h3>
+    </section>
+
+    <section id="contact-page">
+      <div class="container">
+        <div class="row contact-page">
+          <div class="row why-div">
+            <div class="text-center">
+              <h2>Contact Us</h2>
             </div>
+            <hr class="hr-mid" />
           </div>
-          <div class="row landing-content">
-            <div class="col-md-6 landing-blurb">
-              <p>
-                I have 18 years of teaching experience and provide music lessons
-                for all ages. I hold a bachelor's degree in music education and
-                a master's in jazz studies. Lessons are available in person in
-                Tallyn's Reach or online
-              </p>
-              <p>
-                I have 18 years of teaching experience and provide music lessons
-                for all ages. I hold a bachelor's degree in music education and
-                a master's in jazz studies. Lessons are available in person in
-                Tallyn's Reach or online
-              </p>
-            </div>
+          <div class="col-md-6 landing-blurb">
+            <p>Aurora, CO</p>
+            <p>AuroraCoMusicLessons@gmail.com</p>
+            <p>(703) 951-3541</p>
+          </div>
 
-            <div id="contact" class="col-md-6">
-              <label>Contact Us</label>
-              <form
-                id="contact-form"
-                action="mailto: joerafalak@gmail.com"
-                method="POST"
-              >
-                <div class="mb-5">
-                  <label>Name:</label>
-                  <input
-                    type="text"
-                    required
-                    maxlength="50"
-                    class="form-control"
-                    id="name"
-                    name="name"
-                  />
-                </div>
-                <div class="mb-5">
-                  <label for="email_addr">Email:</label>
-                  <input
-                    type="email"
-                    required
-                    maxlength="50"
-                    class="form-control"
-                    id="email_addr"
-                    name="email"
-                    placeholder="name@example.com"
-                  />
-                </div>
-                <div class="mb-5">
-                  <label for="phone">Phone (optional):</label>
-                  <input
-                    type="phone"
-                    required
-                    maxlength="50"
-                    class="form-control"
-                    id="phone"
-                    name="phone"
-                    placeholder="(555) 555-5555"
-                  />
-                </div>
-                <div class="mb-5">
-                  <label for="message">Message:</label>
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    name="message"
-                    rows="5"
-                  ></textarea>
-                </div>
-              </form>
-
-              <div class="text-center text-md-left">
-                <a
-                  class="btn btn-primary btn-contact"
-                  onclick="document.getElementById('contact-form').submit();"
-                  >Send</a
-                >
+          <div id="contact" class="col-md-6">
+            <label>Contact Us</label>
+            <form
+              id="contact-form"
+              action="mailto: joerafalak@gmail.com"
+              method="POST"
+            >
+              <div class="mb-5">
+                <label>Name:</label>
+                <input
+                  type="text"
+                  required
+                  maxlength="50"
+                  class="form-control"
+                  id="name"
+                  name="name"
+                />
               </div>
+              <div class="mb-5">
+                <label for="email_addr">Email:</label>
+                <input
+                  type="email"
+                  required
+                  maxlength="50"
+                  class="form-control"
+                  id="email_addr"
+                  name="email"
+                  placeholder="name@example.com"
+                />
+              </div>
+              <div class="mb-5">
+                <label for="phone">Phone (optional):</label>
+                <input
+                  type="phone"
+                  required
+                  maxlength="50"
+                  class="form-control"
+                  id="phone"
+                  name="phone"
+                  placeholder="(555) 555-5555"
+                />
+              </div>
+              <div class="mb-5">
+                <label for="message">Message:</label>
+                <textarea
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  rows="5"
+                ></textarea>
+              </div>
+            </form>
+
+            <div class="text-center text-md-left">
+              <a
+                class="btn btn-primary btn-contact"
+                onclick="document.getElementById('contact-form').submit();"
+                >Send</a
+              >
             </div>
           </div>
         </div>
