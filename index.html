@@ -48,7 +48,7 @@
                   <div>
                     <!-- TODO: this image is warped AF on mobile, maybe add to media queries or bootstrapify-->
                     <img
-                      class="img-responsive foot-img"
+                      class="foot-img"
                       src="assets/img/temp_logo.jpg"
                     />
                   </div>
@@ -58,7 +58,12 @@
                 </div>
               </a>
             </div>
-            <div class="col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
+            <div class="desktop-links col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
+              <a href="#">Home</a>
+              <a href="#about">About</a>
+              <a href="#contact-page">Contact</a>
+            </div>
+            <div class="mobile-menu col-lg-6 col-xs-6 col-sm-6 col-md-6 text-right">
               <div id="mySidenav" class="sidenav text-center">
                 <a
                   href="javascript:void(0)"
@@ -68,9 +73,9 @@
                 ><br />
                 <a href="#">Home</a>
                 <hr />
-                <a href="#offerings">Services</a>
-                <hr />
                 <a href="#about">About</a>
+                <hr />
+                <a href="#contact-page">Contact</a>
               </div>
               <div class="main" id="main">
                 <a href="#" onclick="openNav()">MENU &#9776;</a>
@@ -81,111 +86,52 @@
         </div>
       </div>
       <div class="container landing-container">
-        <div class="row landing-page">
-          <!-- TODO: this image is warped AF on mobile, maybe add to media queries -->
-          <!-- TODO: margin/padding off -->
-          <div class="landing-pic">
-            <img
-              class="img-responsive img-helmet ian-pic-main"
-              src="assets/img/generic_lesson.jpg"
-            />
-          </div>
-          <div id="contact" class="container">
-            <p>Send a message for more info!</p>
-            <!-- TODO: need to set the correct email address and also populate the fields properly -->
-            <form id="contact-form" action="mailto: joerafalak@gmail.com" method="POST">
-              <div class="mb-5">
-                  <label for="message">Message:</label>
-                  <textarea class="form-control" id="message" name="message" rows="5"></textarea>
-              </div>
-              <div class="mb-5 row contact-info">
-                  <div class="col-lg-6">
-                      <label>Name:</label>
-                      <input type="text" required maxlength="50" class="form-control" id="name" name="name">
-                  </div>
-                  <div class="col-lg-6">
-                      <label for="email_addr">Email:</label>
-                      <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
-                          placeholder="name@example.com">
-                  </div>
-              </div>
-            </form>
-    
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary btn-contact" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="offerings" class="index-part-2">
-      <div class="container">
-        <div class="row">
-          <div class="text-center">
-            <h2>What I Offer</h2>
-          </div>
-          <hr class="hr-mid" />
-          <div class="sub-text text-center">
-            <p class="font-1">
-              I have 18 years of teaching experience and provide music lessons
-              for all ages. I hold a bachelor's degree in music education and a
-              master's in jazz studies. Lessons are available in person in
-              Tallyn's Reach or online
-            </p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12 col-lg-6 col-sm-6 col-md-6 col-block">
-            <div class="block text-center block-first">
-              <div class="icon">
-                <i class="fa fa-diamond fa-2x"></i>
-              </div>
-              <h4>Guitar</h4>
-              <p class="font-2">
-                Strum strum strum, power chord. How to be a rockstar or cool
-                jazz guy
-              </p>
+        <div class="landing-page">
+          <div class="row landing-heading text-center">
+            <div class="col-lg">
+              <h3>Lessons in Aurora, CO or around the world</h3>
             </div>
           </div>
-          <div class="col-xs-12 col-lg-6 col-sm-6 col-md-6 col-block">
-            <div class="block text-center block-second">
-              <div class="icon">
-                <i class="fa fa-camera fa-2x"></i>
-              </div>
-              <h4>Bass</h4>
-              <p class="font-2">
-                It's like guitar but with fewer strings. Slappa da bass and what
-                not. I can teach you how to slap it like a pro.
+          <div class="row landing-content">
+            <div class="col-md-6 landing-blurb">
+              <p>
+                I have 18 years of teaching experience and provide music lessons for all ages. 
+                I hold a bachelor's degree in music education and a master's in jazz studies. 
+                Lessons are available in person in Tallyn's Reach or online
+              </p>
+              <p>
+                I have 18 years of teaching experience and provide music lessons for all ages. 
+                I hold a bachelor's degree in music education and a master's in jazz studies. 
+                Lessons are available in person in Tallyn's Reach or online
               </p>
             </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-12 col-lg-6 col-sm-6 col-md-6 col-block">
-            <div class="block text-center block-third">
-              <div class="icon">
-                <i class="fa fa-eye fa-2x"></i>
+          
+            <div id="contact" class="col-md-6">
+              <label>Contact Us</label>
+              <form id="contact-form" action="mailto: joerafalak@gmail.com" method="POST">
+                <div class="mb-5">
+                  <label>Name:</label>
+                  <input type="text" required maxlength="50" class="form-control" id="name" name="name">
+                </div>
+                <div class="mb-5">
+                  <label for="email_addr">Email:</label>
+                  <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                      placeholder="name@example.com">
+                </div>
+                <div class="mb-5">
+                  <label for="phone">Phone (optional):</label>
+                  <input type="phone" required maxlength="50" class="form-control" id="phone" name="phone"
+                      placeholder="(555) 555-5555">
+                </div>
+                <div class="mb-5">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+                </div>
+              </form>
+      
+              <div class="text-center text-md-left">
+                  <a class="btn btn-primary btn-contact" onclick="document.getElementById('contact-form').submit();">Send</a>
               </div>
-              <h4>Ukulele</h4>
-              <p class="font-2">
-                They'll be calling you Boppenheimer with the way I can teach you
-                how to Uke.
-              </p>
-            </div>
-          </div>
-          <div class="col-xs-12 col-lg-6 col-sm-6 col-md-6 col-block">
-            <div class="block text-center block-last">
-              <div class="icon">
-                <i class="fa fa-sliders fa-2x"></i>
-              </div>
-              <h4>Piano</h4>
-              <p class="font-2">
-                One rule, please don't use the phrase "tickling the ivories"
-              </p>
             </div>
           </div>
         </div>
@@ -231,6 +177,53 @@
             </div>
           </div>
         </div>
+        <hr />
+    </section>
+
+    <section id="contact-page">
+      <div class="container">
+        <div class="row contact-page">
+          <div class="row why-div">
+            <div class="text-center">
+              <h2>Contact Us</h2>
+            </div>
+            <hr class="hr-mid" />
+          </div>
+          <div class="col-md-6 landing-blurb">
+            <p>Aurora, CO</p>
+            <p>AuroraCoMusicLessons@gmail.com</p>
+            <p>(703) 951-3541</p>
+          </div>
+        
+          <div id="contact" class="col-md-6">
+            <label>Contact Us</label>
+            <form id="contact-form" action="mailto: joerafalak@gmail.com" method="POST">
+              <div class="mb-5">
+                <label>Name:</label>
+                <input type="text" required maxlength="50" class="form-control" id="name" name="name">
+              </div>
+              <div class="mb-5">
+                <label for="email_addr">Email:</label>
+                <input type="email" required maxlength="50" class="form-control" id="email_addr" name="email"
+                    placeholder="name@example.com">
+              </div>
+              <div class="mb-5">
+                <label for="phone">Phone (optional):</label>
+                <input type="phone" required maxlength="50" class="form-control" id="phone" name="phone"
+                    placeholder="(555) 555-5555">
+              </div>
+              <div class="mb-5">
+                  <label for="message">Message:</label>
+                  <textarea class="form-control" id="message" name="message" rows="5"></textarea>
+              </div>
+            </form>
+      
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary btn-contact" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="footer">
@@ -238,6 +231,7 @@
         <div class="row">
           <div class="footer-p1">
             <div>
+              <p class="font-2">Aurora, CO (703) 951-3541 AuroraCoMusicLessons@gmail.com</p>
               <p class="font-2">Copyright 2023 by Aurora Music Lessons</p>
             </div>
             <div>
