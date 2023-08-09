@@ -198,11 +198,14 @@ i{
     font-size: 16px;
     line-height: 30px;
 }
+.holder-img{
+    
+}
 .round-img{
     display: table;
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
 }
 .container-fluid{
     padding-left: 0px;
@@ -233,13 +236,10 @@ i{
 
 section .footer {
     background-color: #f7f7f7;
-    /* position: fixed:
-    bottom: 0px; */
 }
 .footer-p1,.footer-p2{
     padding-top: 10px;
-    font-style: italic;
-    font-size: 16px; 
+    font-size: 12px; 
 }
 .footer-p2{
     display: inline-block;
@@ -482,14 +482,14 @@ textarea{
 
 .about-blurb {
     border-radius: 10px;
-    background-color: rgba(255,255,255,0.1);
+    /* background-color: rgba(255,255,255,0.1); */
     margin-bottom: 5%;
     font-family: 'Poppins', sans-serif;
 }
 
 .landing-container {
     padding: 0 10% 3% 10%;
-    background-image: url("../img/dark_guitar_neck.jpg");
+    background-image: url("../img/dark_guitar_neckV2.jpg");
 }
 
 .landing-heading {
@@ -533,7 +533,7 @@ textarea{
 }
 
 #about-page {
-    background-image: url("../img/music_blackboard.jpg");
+    background-image: url("../img/music_blackboardV2.jpg");
 }
 
 @media only screen and (max-width: 480px) {
