@@ -198,9 +198,6 @@ i{
     font-size: 16px;
     line-height: 30px;
 }
-.holder-img{
-    
-}
 .round-img{
     display: table;
     width: 300px;
@@ -489,7 +486,7 @@ textarea{
 
 .landing-container {
     padding: 0 10% 3% 10%;
-    background-image: url("../img/dark_guitar_neckV2.jpg");
+    background-image: url("../img/dark_guitar_neckV3.jpg");
 }
 
 .landing-heading {
@@ -511,6 +508,21 @@ textarea{
 .landing-blurb p {
     font-size: 1.2em;
     padding: 8%;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 5px black;
+}
+
+.landing-blurb .subheading {
+    font-size: 1.2em;
+    text-shadow: 3px 3px 5px black;
+    text-align: center;
+}
+
+.landing-blurb #free-lesson {
+    font-size: 3.4em;
+    font-weight: bold;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
 }
 
 .contact-page .landing-blurb p {
@@ -529,11 +541,15 @@ textarea{
 }
 
 #contact-page {
-    background-image: url("../img/piano_guitar.jpg");
+    background-image: url("../img/piano_guitarV2.jpg");
 }
 
 #about-page {
     background-image: url("../img/music_blackboardV2.jpg");
+}
+
+#contact h4 {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 480px) {
